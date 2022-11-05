@@ -1,0 +1,38 @@
+services:
+
+  postgres:
+    container_name: postgres
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    command: postgres -c config_file=/etc/postgresql/postgresql.conf
+    volumes:
+      - postgres_data:/var/lib/postgres/data/
+    env_file:
+      - ./postgres/.env
+
+  flask:
+    container_name: flask
+    build:
+      context: ./flask
+      dockerfile: Dockerfile
+    env_file:
+      - ./flask/.env
+    depends_on:
+      - postgres
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    volumes:
+      - nginx_log:/data/log
+    depends_on:
+      - flask
+    ports:
+      - 80:80
+
+volumes:
+  postgres_data:
+  nginx_log:
