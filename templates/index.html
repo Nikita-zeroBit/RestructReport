@@ -1,62 +1,115 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div>
-
-    <span>Hmmmm!</span>
-
-</div>
-<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
+<section class="intro">
+    <div class="wrapper">
+        <h1 class="intro__title">
+            We make your sales easier
+        </h1>
+        <p class="intro__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id nisi eget nisl ornare placerat. Vestibulum rutrum neque vel elementum dictum. Nunc vitae nisl ac urna convallis porta. Praesent eu gravida sapien. Aliquam vitae odio pretium, viverra justo vitae, ultrices tortor. Cras euismod massa justo, sit amet auctor tellus consectetur nec. Aenean mollis libero nec quam laoreet porta. Proin vehicula lacus ac efficitur tempor. Aliquam et tortor sit amet mi euismod laoreet. Cras elementum fringilla congue.
     </div>
+    <div class="intro__diagrams">
+        <img src="/static/img/diagrams.svg" alt="diagrams_image">
+    </div>
+</section>
+<div class="line"></div>
+<section class="cards">
+<a name="tariffs">
+    <ul class="tariffs__cards">
+        <li class="one__card">
+            <h1 class="tariff_text">
+                Free Trial
+            </h1>
+            <p class="price__text">
+                0.00$/mo
+            </p>
+            <div class="line-2"></div>
+            <ul class="features">
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+            </ul>
+            <div class="trial__button">
+                <button class="trial__start">
+                    <span class="trial__text">START TRIAL</span>
+                </button>
+            </div>
+        </li>
+        <li class="one__card">
+            <h1 class="tariff_text">
+                Quick Start
+            </h1>
+            <p class="price__text">
+                4.99$/mo
+            </p>
+            <div class="line-2"></div>
+            <ul class="features">
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+            </ul>
+            <div class="trial__button">
+                <button class="trial__start">
+                    <span class="trial__text">START TRIAL</span>
+                </button>
+            </div>
+        </li>
+        <li class="one__card">
+            <h1 class="tariff_text">
+                Sales Expert
+            </h1>
+            <p class="price__text">
+                11.99$/mo
+            </p>
+            <div class="line-2"></div>
+            <ul class="features">
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+                <li class="features__point">
+                    <span class="features__text">
+                        Base Features
+                    </span>
+                </li>
+            </ul>
+            <div class="trial__button">
+                <button class="trial__start">
+                    <span class="trial__text">START TRIAL</span>
+                </button>
+            </div>
+        </li>
+    </ul>
+</section>
 {% endblock %}
