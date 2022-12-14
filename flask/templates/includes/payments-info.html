@@ -1,25 +1,4 @@
-{% extends "base.html" %}
-
-{% block stylesheet %}
-<link rel="stylesheet" href="/static/css/main.css">
-{% endblock %}
-
-{% block content %}
-<section class="intro">
-    <div class="wrapper">
-        <h1 class="intro__title">
-            We make your sales easier
-        </h1>
-        <p class="intro__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id nisi eget nisl ornare placerat. Vestibulum rutrum neque vel elementum dictum. Nunc vitae nisl ac urna convallis porta. Praesent eu gravida sapien. Aliquam vitae odio pretium, viverra justo vitae, ultrices tortor. Cras euismod massa justo, sit amet auctor tellus consectetur nec. Aenean mollis libero nec quam laoreet porta. Proin vehicula lacus ac efficitur tempor. Aliquam et tortor sit amet mi euismod laoreet. Cras elementum fringilla congue.
-    </div>
-    <div class="intro__diagrams">
-        <img src="/static/img/diagrams.svg" alt="diagrams_image">
-    </div>
-</section>
-<a name="tariffs"></a>
-<div class="line"></div>
-<section class="cards">
+<div class="payments__cards">
     <ul class="tariffs__cards">
         <li class="one__card">
             <h1 class="tariff_text">
@@ -46,11 +25,6 @@
                     </span>
                 </li>
             </ul>
-            <div class="trial__button">
-                <button class="trial__start">
-                    <span class="trial__text">START TRIAL</span>
-                </button>
-            </div>
         </li>
         <li class="one__card">
             <h1 class="tariff_text">
@@ -77,11 +51,6 @@
                     </span>
                 </li>
             </ul>
-            <div class="trial__button">
-                <button class="trial__start">
-                    <span class="trial__text">START TRIAL</span>
-                </button>
-            </div>
         </li>
         <li class="one__card">
             <h1 class="tariff_text">
@@ -108,26 +77,14 @@
                     </span>
                 </li>
             </ul>
-            <div class="trial__button">
-                <button class="trial__start">
-                    <span class="trial__text">START TRIAL</span>
-                </button>
-            </div>
         </li>
     </ul>
-</section>
-<div class="line"></div>
-<a name="about_us"></a>
-<section class="about__us">
-    <div class="wrapper">
-        <h1 class="intro__title">
-            Who we are?
-        </h1>
-        <p class="intro__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id nisi eget nisl ornare placerat. Vestibulum rutrum neque vel elementum dictum. Nunc vitae nisl ac urna convallis porta. Praesent eu gravida sapien. Aliquam vitae odio pretium, viverra justo vitae, ultrices tortor. Cras euismod massa justo, sit amet auctor tellus consectetur nec. Aenean mollis libero nec quam laoreet porta. Proin vehicula lacus ac efficitur tempor. Aliquam et tortor sit amet mi euismod laoreet. Cras elementum fringilla congue.
+    <div class="buttons">
+        <button class="pay">
+            <a href="/pay" class="pay__text">PAY</a>
+        </button>
+        <button class="cancel">
+            <a href="/cancel-subscription" class="cancel__text">CANCEL</a>
+        </button>
     </div>
-    <div class="about__people">
-        <img src="/static/img/people.svg" alt="people_image">
-    </div>
-</section>
-{% endblock %}
+</div>

@@ -1,5 +1,62 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block stylesheet %}
+<link rel="stylesheet" href="/static/css/account.css">
+{% endblock %}
 
+{% block content %}
+<section class="account__intro">
+    <div class="account__header">
+        <div class="account__name__icon">
+            <img src="/static/img/account_icon.svg" alt="account_image">
+            <h1 class="account__username">
+                Your username
+            </h1>
+        </div>
+        <button class="account__logout">Logout</button>
+    </div>
+</section>
+<section class="account__main">
+        <div class="account__menu">
+            <ul class="account__menu_columns">
+                <li class="one__point__account__menu">
+                    <img src="" alt="" class="menu__point__icon">
+                    <a href="/account-info" class="menu__point">Account</a>
+                </li>
+                <li class="one__point__account__menu">
+                    <img src="" alt="" class="menu__point__icon">
+                    <a href="/payments" class="menu__point">Payments</a>
+                </li>
+                <li class="one__point__account__menu">
+                    <img src="" alt="" class="menu__point__icon">
+                    <a href="/upload-file" class="menu__point">Upload File</a>
+                </li>
+                <li class="one__point__account__menu">
+                    <img src="" alt="" class="menu__point__icon">
+                    <a href="/analytics" class="menu__point">Analytics</a>
+                </li>
+                <li class="one__point__account__menu">
+                    <img src="" alt="" class="menu__point__icon">
+                    <a href="/faq" class="menu__point">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="account__main__box">
+            {% if context.type == 'account' %}
+                {% include 'includes/account-info.html' %}
+            {% endif %}
+            {% if context.type == 'payments' %}
+                {% include 'includes/payments-info.html' %}
+            {% endif %}
+            {% if context.type == 'upload' %}
+                {% include 'includes/upload.html' %}
+            {% endif %}
+            {% if context.type == 'analytics' %}
+                {% include 'includes/analytics-info.html' %}
+            {% endif %}
+            {% if context.type == 'faq.html' %}
+                {% include 'includes/faq.html' %}
+            {% endif %}
+        </div>
+</section>
 {% endblock %}

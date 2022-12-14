@@ -1,0 +1,29 @@
+/* Footer */
+
+footer{
+    position: absolute;
+    height: 132px;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0 0 100px;
+    gap: 346px;
+    background: #F2E7D5;
+}
+
+.footer__menu__points{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 40px;
+    position: relative;
+    bottom: 0;
+    width: 180px;
+    height: 55px;
+}

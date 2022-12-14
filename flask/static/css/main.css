@@ -1,3 +1,176 @@
-main {
-    background-color: rgba(6,14,37,0.87);
+/* Intro Section */
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    background-color: #393E46;
+    padding: 120px 0 0 100px;
+    margin-bottom: 150px;
+}
+
+.intro__title{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 28px;
+    color: #F7F7F7;
+    margin-bottom: 30px;
+}
+
+.intro__subtitle{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 38px;
+    color: #F7F7F7;
+
+    width: 590px;
+}
+
+.intro__diagrams{
+    padding-left: 200px;
+}
+
+.line{
+    background: #F2E7D5CC;
+    margin: 90px 60px 40px 60px;
+    border: 1px solid rgba(242, 231, 213, 0.8);
+    transform: rotate(0deg);
+}
+
+/* Tariff Cards */
+
+.cards{
+    height: auto;
+    position: relative;
+    margin-bottom: 200px;
+    margin-top: 150px;
+}
+
+.one__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 22px 10px;
+    gap: 20px;
+
+    width: 350px;
+    height: 400px;
+
+    background: #F2E7D5;
+    border-radius: 40px;
+}
+
+.tariffs__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 140px;
+    height: 400px;
+}
+
+.tariff_text{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 56px;
+    color: #393E46;
+    width: 300px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.price__text{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #393E46;
+    width: 192px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 15px;
+    list-style-type: disc;
+    color: #6D9886;
+}
+
+.features__point::before{
+    color: #6D9886;
+}
+
+.features__text{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+}
+
+.line-2{
+    width: 256px;
+    height: 0;
+
+    border: 1px solid #393E46;
+}
+
+.trial__button{
+    width: 250px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.trial__start{
+    background: #6D9886;
+    border-radius: 40px;
+    width: 100%;
+    height: 47px;
+    border: none;
+}
+
+.trial__text{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+/* About section */
+
+.about__us{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    background-color: #393E46;
+    padding: 180px 104px 0 104px;
+    margin-bottom: 200px;
+}
+
+.about__people{
+    padding-left: 100px;
 }

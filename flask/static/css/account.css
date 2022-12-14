@@ -1,0 +1,536 @@
+/* Account intro section */
+
+.account__intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 730px;
+    margin-top: 108px;
+}
+
+.account__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 730px;
+}
+
+.account__name__icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 40px;
+
+    width: 366px;
+    height: 100px;
+}
+
+.account__username{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 28px;
+    color: #F7F7F7;
+    white-space: nowrap;
+}
+
+.account__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 25px;
+
+    position: absolute;
+    width: 251px;
+    height: 750px;
+
+    background: rgba(242, 231, 213, 0.95);
+    border-radius: 40px;
+}
+
+.account__menu_columns{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.account__main{
+    display: flex;
+    flex-direction: row;
+    background-color: #393E46;
+    padding: 42px 104px 0 104px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+}
+
+.account__main__div{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.account__info__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 0;
+    gap: 30px;
+
+    width: 850px;
+    height: 290px;
+}
+
+.account__main__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 50px;
+
+    width: 950px;
+    height: 750px;
+
+    background: rgba(242, 231, 213, 0.95);
+    border-radius: 40px;
+    margin-left: 280px;
+}
+
+.subscription__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0 25px;
+
+    width: 850px;
+    height: 214px;
+
+    background: #DFD2BE;
+    border-radius: 10px;
+}
+
+.sub__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 60px;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+.subscription__box__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+    margin: 0;
+}
+
+.bold__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+    white-space: pre;
+}
+
+.subscription__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 75px 0 0;
+    gap: 30px;
+    width: 825px;
+}
+
+.edit__pay, .load__file{
+    border: 0;
+    background: #6D9886;
+    border-radius: 20px;
+    width: 50%;
+    height: 46px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #393E46;
+}
+
+.email__box, .password__box{
+    background: #DFD2BE;
+    background-blend-mode: color-burn;
+    border-radius: 10px;
+    width: 410px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__text__change{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 14px;
+
+    position: absolute;
+    width: 360px;
+
+    border-radius: 40px;
+}
+
+.text__inbox__field{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+    margin: 0;
+}
+
+.password__field, .email__field{
+    border-radius: 10px;
+    border: 0;
+    width: 356px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.save__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    width: 350px;
+    height: 60px;
+    background: #6D9886;
+    border-radius: 40px;
+    border: 0;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+    margin: 0;
+}
+
+.one__point__account__menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* Tariff cards */
+
+.tariffs__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 45px;
+    height: 350px;
+}
+
+.one__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 22px 25px;
+    gap: 10px;
+
+    width: 250px;
+    height: 350px;
+
+    background: #DFD2BE;
+    border-radius: 40px;
+}
+
+.tariff_text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #393E46;
+}
+
+.line-2{
+    width: 180px;
+    height: 0;
+
+    border: 1px solid #393E46;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 15px;
+    list-style-type: disc;
+    color: #6D9886;
+    margin-top: 15px;
+}
+
+.features__point::before{
+    color: #6D9886;
+    height: 2px;
+}
+
+.features__text{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+}
+
+.price__text{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #393E46;
+    width: 192px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.payments__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-right: 95px;
+    margin-left: 95px;
+    height: 96px;
+}
+
+.pay{
+    width: 306px;
+    background: #6D9886;
+    border-radius: 25px;
+    border: 0;
+}
+
+.pay__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 98px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #F2E7D5;
+    text-decoration: none;
+}
+
+.edit_sub{
+    color: #393E46;
+    text-decoration: none;
+}
+
+.pay__text:hover, .pay__text:focus, .cancel__text:hover, .cancel__text:focus, .edit_sub:focus, .edit_sub:hover{
+    opacity: .75;
+    text-decoration: none;
+    color: #393E46;
+}
+
+.cancel{
+    border: 0;
+    width: 306px;
+    background: #A1A1A1;
+    border-radius: 25px;
+}
+
+.cancel__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 98px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #393E46;
+}
+
+/* Upload section */
+
+.upload__box{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.upload__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+}
+
+.parameters__check{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.checkbox_{
+    transform: scale(2);
+}
+
+.checkbox__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #393E46;
+}
+
+.drop__file__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 490px;
+    height: 241px;
+
+    background: rgba(245, 245, 245, 0.75);
+    border: 2px dashed #393E46;
+    border-radius: 20px;
+}
+
+.upload__icon{
+
+}
+
+.upload__file__text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    text-wrap: normal;
+
+    color: #393E46;
+}
+
+.send__file{
+    width: 490px;
+    height: 60px;
+    background: #6D9886;
+    border-radius: 60px;
+}
+
+.link__for__sending{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
